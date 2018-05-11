@@ -21,6 +21,11 @@ namespace Communal_Payments
     {
         static void Main(string[] args)
         {
+            Payer pay = new Payer();
+            pay.PrintInfo();
+
+            Service service = new Service();
+            service.PrintInfo();
         }
     }
 }
