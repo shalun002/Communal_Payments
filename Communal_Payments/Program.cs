@@ -21,11 +21,30 @@ namespace Communal_Payments
     {
         static void Main(string[] args)
         {
+            int area = 0, residents, saeson, privileges;
+
             Payer pay = new Payer();
-            pay.PrintInfo();
+
+            Console.Write("Площадь помещения - ");
+            int.TryParse(Console.ReadLine(), out area);
+
+            Console.Write("Kоличество проживающих - ");
+            int.TryParse(Console.ReadLine(), out residents);
+
+            Console.Write("Cезон года (Весна = 1, Лето = 2, Осень = 3, Зима = 4) - ");
+            int.TryParse(Console.ReadLine(), out saeson);
+
+            Console.Write("Льготы (нет льгот = 0, ветеран труда = 1, ветеран войны = 2) - ");
+            int.TryParse(Console.ReadLine(), out privileges);
+
+            Console.Clear();
+            Console.WriteLine();
+
+            Payer payer = new Payer(area, residents, saeson, privileges);
+            payer.PrintInfo();
 
             Service service = new Service();
-            service.PrintInfo();
+            service.TotalPrint(service, payer);
         }
     }
 }

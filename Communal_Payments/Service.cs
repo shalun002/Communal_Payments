@@ -101,16 +101,15 @@ namespace Communal_Payments
             {
                 TotalSumm = service[i].PayGas + service[i].PayHeating + service[i].PayMaintenance + service[i].PayWater;
             }
-            Console.WriteLine("Total sum = " + TotalSumm);
-        }
-
-        public void PrintInfo()
-        {
             Console.WriteLine("==============================================================================================");
             Console.WriteLine();
             Console.WriteLine("||     Вид платежа      ||     Начислено      ||     Льготная скидка     ||     Итого    ||");
             Console.WriteLine();
             Console.WriteLine("==============================================================================================");
+            Console.WriteLine();
+            Console.WriteLine("\t\t\t\t\t " + TotalSumm);
+            Console.WriteLine("==============================================================================================");
+            Console.WriteLine();
         }
     }
 }
