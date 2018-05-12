@@ -107,7 +107,7 @@ namespace Communal_Payments
             Console.WriteLine();
             Console.WriteLine("==============================================================================================");
             Console.WriteLine();
-            Console.WriteLine("   " + tarif.TypeOfPayments + "\t" + "\t\t\t\t" + payer.privileges +"\t\t" + TotalSumm);
+            Console.WriteLine("   " + tarif.TypeOfPayments + "\t\t" + tarif.Accrued + "\t\t\t" + payer.privileges +"\t\t" + TotalSumm);
             Console.WriteLine();
             Console.WriteLine("==============================================================================================");
             Console.WriteLine();

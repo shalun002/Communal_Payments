@@ -19,14 +19,18 @@ namespace Communal_Payments
         public double Water { get; set; }
         public double Gas { get; set; }
         public double Maintenance { get; set; }
+        public double Accrued { get; set; }
         public string TypeOfPayments { get; set; }
+
 
         public Tariff()
         {
-            Heating = 31.61;              // отопление
-            Water = 55.56;                // вода
-            Gas = 347.48;                 // газ
-            Maintenance = 17.00;          // содержание
+            Heating = 31.61;                 // отопление
+            Water = 55.56;                   // вода
+            Gas = 347.48;                    // газ
+            Maintenance = 17.00;             // содержание
+            Random rnd = new Random();
+            Accrued = rnd.Next(100, 10000);  // начислено
             TypeOfPayments = "Комунальные платежи";
         }  
     }      

@@ -44,7 +44,7 @@ namespace Communal_Payments
 
             Payer payer = new Payer(area, residents, saeson, privileges);
             payer.PrintInfo();
-            Console.ReadLine();
+
             Console.WriteLine();
 
             Service serv = new Service();
