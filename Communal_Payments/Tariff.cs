@@ -19,13 +19,15 @@ namespace Communal_Payments
         public double Water { get; set; }
         public double Gas { get; set; }
         public double Maintenance { get; set; }
+        public string TypeOfPayments { get; set; }
 
         public Tariff()
         {
-            double HeatingBasicTariff = 31.61;              // отопление
-            double WaterBasicTariff = 55.56;                // вода
-            double GasBasicTariff = 347.48;                 // газ
-            double MaintenanceBasicTariff = 17.00;          // содержание
+            Heating = 31.61;              // отопление
+            Water = 55.56;                // вода
+            Gas = 347.48;                 // газ
+            Maintenance = 17.00;          // содержание
+            TypeOfPayments = "Комунальные платежи";
         }  
     }      
 }          

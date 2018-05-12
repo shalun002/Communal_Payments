@@ -40,11 +40,19 @@ namespace Communal_Payments
             Console.Clear();
             Console.WriteLine();
 
+            
+
             Payer payer = new Payer(area, residents, saeson, privileges);
             payer.PrintInfo();
+            Console.ReadLine();
+            Console.WriteLine();
 
-            Service service = new Service();
-            service.TotalPrint(service, payer);
+            Service serv = new Service();
+            serv.Count(payer);
+
+            Tariff tarif = new Tariff();
+
+            serv.TotalPrint(serv, payer, tarif);
         }
     }
 }

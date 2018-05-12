@@ -50,7 +50,7 @@ namespace Communal_Payments
             this.privileges = (Privileges)privileges;
             WaterReading = rand.Next(3, 12);
         }
-
+        
         public void PrintInfo()
         {
             Console.WriteLine();

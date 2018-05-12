@@ -93,7 +93,7 @@ namespace Communal_Payments
 
         }
 
-        public void TotalPrint(Service service, Payer payer)
+        public void TotalPrint(Service service, Payer payer, Tariff tarif)
         {
             double TotalSumm = 0;
 
@@ -107,7 +107,8 @@ namespace Communal_Payments
             Console.WriteLine();
             Console.WriteLine("==============================================================================================");
             Console.WriteLine();
-            Console.WriteLine("\t\t\t\t\t " + TotalSumm);
+            Console.WriteLine("   " + tarif.TypeOfPayments + "\t" + "\t\t\t\t" + payer.privileges +"\t\t" + TotalSumm);
+            Console.WriteLine();
             Console.WriteLine("==============================================================================================");
             Console.WriteLine();
         }
